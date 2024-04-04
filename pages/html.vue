@@ -8,6 +8,11 @@ const filterTags = () => {
 };
 
 const { locale } = useI18n();
+
+const copyCode = (text) => {
+  navigator.clipboard.writeText(text);
+  alert("copy qilindi");
+};
 </script>
 
 <template>
@@ -73,6 +78,12 @@ const { locale } = useI18n();
                 :code="tag.examples[0]"
                 class="container border-0"
               />
+              <button
+                class="float-end bg-green-300 mt-2"
+                @click="copyCode(tag.examples[0])"
+              >
+                copy
+              </button>
             </details>
 
             <details class="px-2 py-1 hover:cursor-pointer hover:bg-slate-200">
