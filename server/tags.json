@@ -1,0 +1,851 @@
+[
+  {
+    "name": "a",
+    "description": "Defines a hyperlink.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<a href=\"https://example.com\">Example</a>"]
+  },
+  {
+    "name": "abbr",
+    "description": "Defines an abbreviation or an acronym.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<abbr title=\"Hypertext Markup Language\">HTML</abbr>"]
+  },
+  {
+    "name": "address",
+    "description": "Defines contact information for the author/owner of a document or an article.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<address>123 Example St, City, Country</address>"]
+  },
+  {
+    "name": "area",
+    "description": "Defines an area inside an image-map.",
+    "type": "inline",
+    "selfClosing": true,
+    "examples": [
+      "<map name=\"workmap\"><area shape=\"rect\" coords=\"34,44,270,350\" alt=\"Computer\" href=\"computer.htm\"></map>"
+    ]
+  },
+  {
+    "name": "article",
+    "description": "Defines independent, self-contained content.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<article><h2>Article Title</h2><p>Article content goes here.</p></article>"
+    ]
+  },
+  {
+    "name": "aside",
+    "description": "Defines content aside from the content (like a sidebar).",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<aside><h4>Aside Title</h4><p>Aside content goes here.</p></aside>"
+    ]
+  },
+  {
+    "name": "audio",
+    "description": "Defines sound content.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<audio controls><source src=\"example.mp3\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio>"
+    ]
+  },
+  {
+    "name": "b",
+    "description": "Defines bold text.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <b>bold</b> text.</p>"]
+  },
+  {
+    "name": "base",
+    "description": "Specifies the base URL/target for all relative URLs in a document.",
+    "type": "meta",
+    "selfClosing": true,
+    "examples": ["<base href=\"https://example.com/\">"]
+  },
+  {
+    "name": "bdi",
+    "description": "Isolates a part of text that might be formatted in a different direction from other text outside it.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <bdi>RTL text</bdi> inside LTR text.</p>"]
+  },
+  {
+    "name": "bdo",
+    "description": "Overrides the current text direction.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <bdo dir=\"rtl\">RTL text</bdo>.</p>"]
+  },
+  {
+    "name": "blockquote",
+    "description": "Defines a section that is quoted from another source.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<blockquote><p>Quoted text goes here.</p></blockquote>"]
+  },
+  {
+    "name": "body",
+    "description": "Defines the document's body.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<body><p>Body content goes here.</p></body>"]
+  },
+  {
+    "name": "br",
+    "description": "Defines a line break.",
+    "type": "inline",
+    "selfClosing": true,
+    "examples": ["<p>This is<br>a line break.</p>"]
+  },
+  {
+    "name": "button",
+    "description": "Defines a clickable button.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<button onclick=\"myFunction()\">Click Me</button>"]
+  },
+  {
+    "name": "canvas",
+    "description": "Defines graphics.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": [
+      "<canvas id=\"myCanvas\" width=\"200\" height=\"100\" style=\"border:1px solid #000000;\"></canvas>"
+    ]
+  },
+  {
+    "name": "caption",
+    "description": "Defines a table caption.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<caption>Table Caption</caption>"]
+  },
+  {
+    "name": "cite",
+    "description": "Defines the title of a work.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>According to <cite>source</cite>, this is a quote.</p>"]
+  },
+  {
+    "name": "code",
+    "description": "Defines a piece of computer code.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is a <code>code</code> example.</p>"]
+  },
+  {
+    "name": "col",
+    "description": "Defines attributes for table columns that apply to all the columns within the <colgroup> element.",
+    "type": "meta",
+    "selfClosing": true,
+    "examples": ["<col width=\"100\">"]
+  },
+  {
+    "name": "colgroup",
+    "description": "Defines a group of one or more columns in a table for formatting.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<colgroup><col span=\"2\" style=\"background-color:#f0f0f0\"><col style=\"background-color:#cccccc\"></colgroup>"
+    ]
+  },
+  {
+    "name": "data",
+    "description": "Links the given content with a machine-readable translation.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": [
+      "<p>My phone number is <data value=\"123456\">123-456</data>.</p>"
+    ]
+  },
+  {
+    "name": "datalist",
+    "description": "Specifies a list of pre-defined options for input controls.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<input list=\"browsers\"><datalist id=\"browsers\"><option value=\"Chrome\"><option value=\"Firefox\"></datalist>"
+    ]
+  },
+  {
+    "name": "dd",
+    "description": "Defines a description/value of a term in a description list.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"]
+  },
+  {
+    "name": "del",
+    "description": "Defines text that has been deleted from a document.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <del>deleted</del> text.</p>"]
+  },
+  {
+    "name": "details",
+    "description": "Defines additional details that the user can view or hide.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<details><summary>Details</summary><p>Details content goes here.</p></details>"
+    ]
+  },
+  {
+    "name": "dfn",
+    "description": "Defines a definition term.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p><dfn>HTML</dfn> stands for Hypertext Markup Language.</p>"]
+  },
+  {
+    "name": "dialog",
+    "description": "Defines a dialog box or window.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<dialog open>This is a dialog box.</dialog>"]
+  },
+  {
+    "name": "div",
+    "description": "Defines a division or a section in an HTML document.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<div>This is a division.</div>"]
+  },
+  {
+    "name": "dl",
+    "description": "Defines a description list.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"]
+  },
+  {
+    "name": "dt",
+    "description": "Defines a term/name in a description list.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"]
+  },
+  {
+    "name": "em",
+    "description": "Defines emphasized text.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <em>emphasized</em> text.</p>"]
+  },
+  {
+    "name": "embed",
+    "description": "Defines a container for an external application or interactive content (eg. a plugin).",
+    "type": "inline",
+    "selfClosing": true,
+    "examples": ["<embed src=\"helloworld.swf\" width=\"300\" height=\"120\">"]
+  },
+  {
+    "name": "fieldset",
+    "description": "Groups related elements in a form.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<fieldset><legend>Legend</legend><p>Fieldset content goes here.</p></fieldset>"
+    ]
+  },
+  {
+    "name": "figcaption",
+    "description": "Defines a caption for a <figure> element.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<figure><img src=\"pic.jpg\" alt=\"Description\"><figcaption>Caption</figcaption></figure>"
+    ]
+  },
+  {
+    "name": "figure",
+    "description": "Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<figure><img src=\"pic.jpg\" alt=\"Description\"><figcaption>Caption</figcaption></figure>"
+    ]
+  },
+  {
+    "name": "footer",
+    "description": "Defines a footer for a document or section.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<footer>Footer content goes here.</footer>"]
+  },
+  {
+    "name": "form",
+    "description": "Defines an HTML form for user input.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<form action=\"/submit-form\" method=\"post\"><input type=\"text\" name=\"name\"><input type=\"submit\" value=\"Submit\"></form>"
+    ]
+  },
+  {
+    "name": "h1",
+    "description": "Defines HTML heading level 1.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<h1>Heading 1</h1>"]
+  },
+  {
+    "name": "h2",
+    "description": "Defines HTML heading level 2.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<h2>Heading 2</h2>"]
+  },
+  {
+    "name": "h3",
+    "description": "Defines HTML heading level 3.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<h3>Heading 3</h3>"]
+  },
+  {
+    "name": "h4",
+    "description": "Defines HTML heading level 4.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<h4>Heading 4</h4>"]
+  },
+  {
+    "name": "h5",
+    "description": "Defines HTML heading level 5.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<h5>Heading 5</h5>"]
+  },
+  {
+    "name": "h6",
+    "description": "Defines HTML heading level 6.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<h6>Heading 6</h6>"]
+  },
+  {
+    "name": "head",
+    "description": "Defines information about the document.",
+    "type": "meta",
+    "selfClosing": false,
+    "examples": ["<head><title>Document Title</title></head>"]
+  },
+  {
+    "name": "header",
+    "description": "Defines a header for a document or section.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<header>Header content goes here.</header>"]
+  },
+  {
+    "name": "hr",
+    "description": "Defines a thematic break (horizontal rule).",
+    "type": "block",
+    "selfClosing": true,
+    "examples": ["<p>This is a paragraph.<hr>This is another paragraph.</p>"]
+  },
+  {
+    "name": "html",
+    "description": "Defines the root of an HTML document.",
+    "type": "meta",
+    "selfClosing": false,
+    "examples": [
+      "<!DOCTYPE html><html><head><title>Document Title</title></head><body>Body content goes here.</body></html>"
+    ]
+  },
+  {
+    "name": "i",
+    "description": "Defines italic text.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <i>italic</i> text.</p>"]
+  },
+  {
+    "name": "iframe",
+    "description": "Defines an inline frame.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<iframe src=\"demo_iframe.htm\" height=\"200\" width=\"300\"></iframe>"
+    ]
+  },
+  {
+    "name": "img",
+    "description": "Defines an image.",
+    "type": "inline",
+    "selfClosing": true,
+    "examples": ["<img src=\"image.jpg\" alt=\"Description\">"]
+  },
+  {
+    "name": "input",
+    "description": "Defines an input control.",
+    "type": "inline",
+    "selfClosing": true,
+    "examples": ["<input type=\"text\" name=\"fname\" value=\"John\">"]
+  },
+  {
+    "name": "ins",
+    "description": "Defines a text that has been inserted into a document.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <ins>inserted</ins> text.</p>"]
+  },
+  {
+    "name": "kbd",
+    "description": "Defines keyboard input.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>"]
+  },
+  {
+    "name": "label",
+    "description": "Defines a label for an <input> element.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": [
+      "<label for=\"fname\">First name:</label><input type=\"text\" id=\"fname\" name=\"fname\">"
+    ]
+  },
+  {
+    "name": "legend",
+    "description": "Defines a caption for a <fieldset> element.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<fieldset><legend>Legend</legend><p>Fieldset content goes here.</p></fieldset>"
+    ]
+  },
+  {
+    "name": "li",
+    "description": "Defines a list item.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<ul><li>Item 1</li><li>Item 2</li></ul>"]
+  },
+  {
+    "name": "link",
+    "description": "Defines the relationship between a document and an external resource (most used to link to stylesheets).",
+    "type": "meta",
+    "selfClosing": true,
+    "examples": [
+      "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">"
+    ]
+  },
+  {
+    "name": "main",
+    "description": "Defines the main content of a document.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<main>Main content goes here.</main>"]
+  },
+  {
+    "name": "map",
+    "description": "Defines a client-side image-map.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<map name=\"workmap\"><area shape=\"rect\" coords=\"34,44,270,350\" alt=\"Computer\" href=\"computer.htm\"></map>"
+    ]
+  },
+  {
+    "name": "mark",
+    "description": "Defines marked/highlighted text.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <mark>highlighted</mark> text.</p>"]
+  },
+  {
+    "name": "menu",
+    "description": "Defines a list/menu of commands.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<menu type=\"context\"><menuitem>Copy</menuitem><menuitem>Paste</menuitem></menu>"
+    ]
+  },
+  {
+    "name": "meta",
+    "description": "Defines metadata about an HTML document.",
+    "type": "meta",
+    "selfClosing": true,
+    "examples": ["<meta charset=\"UTF-8\">"]
+  },
+  {
+    "name": "meter",
+    "description": "Defines a scalar measurement within a known range (a gauge).",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<meter value=\"2\" min=\"0\" max=\"10\">2 out of 10</meter>"]
+  },
+  {
+    "name": "nav",
+    "description": "Defines navigation links.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<nav><a href=\"/home\">Home</a> | <a href=\"/about\">About</a></nav>"
+    ]
+  },
+  {
+    "name": "noscript",
+    "description": "Defines an alternate content for users that do not support client-side scripts.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<noscript>Your browser does not support JavaScript!</noscript>"
+    ]
+  },
+  {
+    "name": "object",
+    "description": "Defines an embedded object.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<object data=\"helloworld.swf\" width=\"300\" height=\"200\"></object>"
+    ]
+  },
+  {
+    "name": "ol",
+    "description": "Defines an ordered list.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<ol><li>Item 1</li><li>Item 2</li></ol>"]
+  },
+  {
+    "name": "optgroup",
+    "description": "Defines a group of related options in a dropdown list.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<select name=\"cars\"><optgroup label=\"Swedish Cars\"><option value=\"volvo\">Volvo</option></optgroup></select>"
+    ]
+  },
+  {
+    "name": "option",
+    "description": "Defines an option in a dropdown list.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<select name=\"cars\"><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option></select>"
+    ]
+  },
+  {
+    "name": "output",
+    "description": "Defines the result of a calculation.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<output name=\"result\" for=\"x y\">5</output>"]
+  },
+  {
+    "name": "p",
+    "description": "Defines a paragraph.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<p>This is a paragraph.</p>"]
+  },
+  {
+    "name": "param",
+    "description": "Defines a parameter for an object.",
+    "type": "meta",
+    "selfClosing": true,
+    "examples": [
+      "<object data=\"helloworld.swf\"><param name=\"movie\" value=\"helloworld.swf\"></object>"
+    ]
+  },
+  {
+    "name": "picture",
+    "description": "Defines a container for multiple image sources.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<picture><source srcset=\"img_smallflower.jpg\" media=\"(max-width: 600px)\"><source srcset=\"img_flowers.jpg\"><img src=\"img_flowers.jpg\" alt=\"Flowers\"></picture>"
+    ]
+  },
+  {
+    "name": "pre",
+    "description": "Defines preformatted text.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<pre>This is preformatted text.</pre>"]
+  },
+  {
+    "name": "progress",
+    "description": "Defines the progress of a task.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<progress value=\"22\" max=\"100\">22%</progress>"]
+  },
+  {
+    "name": "q",
+    "description": "Defines a short quotation.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>According to <q>source</q>, this is a quote.</p>"]
+  },
+  {
+    "name": "rp",
+    "description": "Defines what to show in browsers that do not support ruby annotations.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<ruby><rb>1</rb><rp>(</rp><rt>One</rt><rp>)</rp></ruby>"]
+  },
+  {
+    "name": "rt",
+    "description": "Defines an explanation/pronunciation of characters (for East Asian typography).",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<ruby><rb>1</rb><rp>(</rp><rt>One</rt><rp>)</rp></ruby>"]
+  },
+  {
+    "name": "ruby",
+    "description": "Defines a ruby annotation (for East Asian typography).",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<ruby><rb>1</rb><rp>(</rp><rt>One</rt><rp>)</rp></ruby>"]
+  },
+  {
+    "name": "s",
+    "description": "Defines text that is no longer correct or relevant.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <s>strikethrough</s> text.</p>"]
+  },
+  {
+    "name": "samp",
+    "description": "Defines sample output from a computer program.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <samp>sample</samp> text.</p>"]
+  },
+  {
+    "name": "script",
+    "description": "Defines a client-side script.",
+    "type": "meta",
+    "selfClosing": false,
+    "examples": ["<script>console.log('Hello, World!');</script>"]
+  },
+  {
+    "name": "section",
+    "description": "Defines a section in a document.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<section>Section content goes here.</section>"]
+  },
+  {
+    "name": "select",
+    "description": "Defines a dropdown list.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<select name=\"cars\"><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option></select>"
+    ]
+  },
+  {
+    "name": "small",
+    "description": "Defines smaller text.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <small>small</small> text.</p>"]
+  },
+  {
+    "name": "source",
+    "description": "Defines multiple media resources for media elements (<video> and <audio>).",
+    "type": "meta",
+    "selfClosing": true,
+    "examples": [
+      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><source src=\"movie.ogg\" type=\"video/ogg\">Your browser does not support the video tag.</video>"
+    ]
+  },
+  {
+    "name": "span",
+    "description": "Defines a section in a document.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<span style=\"color:red\">This is a span.</span>"]
+  },
+  {
+    "name": "strong",
+    "description": "Defines strong importance.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <strong>strong</strong> text.</p>"]
+  },
+  {
+    "name": "style",
+    "description": "Defines style information for a document.",
+    "type": "meta",
+    "selfClosing": false,
+    "examples": ["<style>body { background-color: lightblue; }</style>"]
+  },
+  {
+    "name": "sub",
+    "description": "Defines subscripted text.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <sub>subscripted</sub> text.</p>"]
+  },
+  {
+    "name": "summary",
+    "description": "Defines a visible heading for a <details> element.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": [
+      "<details><summary>Details</summary><p>Details content goes here.</p></details>"
+    ]
+  },
+  {
+    "name": "sup",
+    "description": "Defines superscripted text.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <sup>superscripted</sup> text.</p>"]
+  },
+  {
+    "name": "svg",
+    "description": "Defines a container for SVG graphics.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": [
+      "<svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"black\" stroke-width=\"3\" fill=\"red\" /></svg>"
+    ]
+  },
+  {
+    "name": "table",
+    "description": "Defines a table.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<table><tr><th>Header</th></tr><tr><td>Data</td></tr></table>"
+    ]
+  },
+  {
+    "name": "tbody",
+    "description": "Defines a group of rows in a table.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<table><tbody><tr><td>Data</td></tr></tbody></table>"]
+  },
+  {
+    "name": "td",
+    "description": "Defines a cell in a table.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<table><tr><td>Data</td></tr></table>"]
+  },
+  {
+    "name": "template",
+    "description": "Defines a container for content that should be hidden when the page loads.",
+    "type": "meta",
+    "selfClosing": false,
+    "examples": ["<template>Template content goes here.</template>"]
+  },
+  {
+    "name": "textarea",
+    "description": "Defines a multiline input control (text area).",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<textarea rows=\"4\" cols=\"50\">Enter text here...</textarea>"
+    ]
+  },
+  {
+    "name": "tfoot",
+    "description": "Defines a footer for a table.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<table><tfoot><tr><td>Footer</td></tr></tfoot></table>"]
+  },
+  {
+    "name": "th",
+    "description": "Defines a header cell in a table.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<table><tr><th>Header</th></tr></table>"]
+  },
+  {
+    "name": "thead",
+    "description": "Defines a header for a table or a group of rows in a table.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<table><thead><tr><th>Header</th></tr></thead></table>"]
+  },
+  {
+    "name": "time",
+    "description": "Defines a date/time.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<time datetime=\"2008-02-14T20:00Z\">Valentine's Day</time>"]
+  },
+  {
+    "name": "title",
+    "description": "Defines the title of the document.",
+    "type": "meta",
+    "selfClosing": false,
+    "examples": ["<title>Document Title</title>"]
+  },
+  {
+    "name": "tr",
+    "description": "Defines a row in a table.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<table><tr><td>Data</td></tr></table>"]
+  },
+  {
+    "name": "track",
+    "description": "Defines text tracks for <video> and <audio> elements.",
+    "type": "meta",
+    "selfClosing": true,
+    "examples": [
+      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><track src=\"subtitles_en.vtt\" kind=\"subtitles\" srclang=\"en\" label=\"English\"></video>"
+    ]
+  },
+  {
+    "name": "u",
+    "description": "Defines text that should be stylistically different from normal text.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>This is <u>underlined</u> text.</p>"]
+  },
+  {
+    "name": "ul",
+    "description": "Defines an unordered list.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": ["<ul><li>Item 1</li><li>Item 2</li></ul>"]
+  },
+  {
+    "name": "var",
+    "description": "Defines a variable.",
+    "type": "inline",
+    "selfClosing": false,
+    "examples": ["<p>The <var>variable</var> value is 5.</p>"]
+  },
+  {
+    "name": "video",
+    "description": "Defines a video.",
+    "type": "block",
+    "selfClosing": false,
+    "examples": [
+      "<video width=\"320\" height=\"240\" controls><source src=\"movie.mp4\" type=\"video/mp4\"><source src=\"movie.ogg\" type=\"video/ogg\">Your browser does not support the video tag.</video>"
+    ]
+  },
+  {
+    "name": "wbr",
+    "description": "Defines a possible line-break.",
+    "type": "inline",
+    "selfClosing": true,
+    "examples": [
+      "<p>This is a very long word that needs to break. Here comes a possible break: <wbr>antidisestablishmentarianism.</p>"
+    ]
+  }
+]
