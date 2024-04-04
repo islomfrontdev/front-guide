@@ -1,6 +1,6 @@
 <template>
-  <div class="">
-    <header class="bg-[#B4B4B8]">
+  <div>
+    <header class="bg-slate-200 sticky top-0 left-0">
       <nav class="flex items-center justify-between py-2 container mx-auto">
         <NuxtLink to="/">Front Guide</NuxtLink>
         <ul class="flex gap-2">
@@ -19,6 +19,7 @@
           <option value="ru">ru</option>
           <option value="en">en</option>
         </select>
+        <ColorMode />
       </nav>
     </header>
     <div class="container mx-auto">
@@ -36,8 +37,4 @@ const { setLocale } = useI18n();
   color: #e8c872;
 }
 </style>
-<style>
-body {
-  background-color: #c7c8cc;
-}
-</style>
+<style></style>

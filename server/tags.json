@@ -81,7 +81,7 @@
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<audio controls><source src=\"example.mp3\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio>"
+      "<audio controls><source src=\"https://cdn.pixabay.com/download/audio/2022/02/22/audio_d1718ab41b.mp3\" type=\"audio/mpeg\">Your browser does not support the audio element.</audio>"
     ]
   },
   {
@@ -411,7 +411,7 @@
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<figure><img src=\"image.jpg\"><figcaption>Image caption</figcaption></figure>"
+      "<figure><img src=\"https://picsum.photos\"><figcaption>Image caption</figcaption></figure>"
     ]
   },
   {
@@ -424,7 +424,7 @@
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<figure><img src=\"image.jpg\"><figcaption>Image caption</figcaption></figure>"
+      "<figure><img src=\"https://picsum.photos/200/300\"><figcaption>Image caption</figcaption></figure>"
     ]
   },
   {
@@ -539,7 +539,7 @@
     },
     "type": "inline",
     "selfClosing": true,
-    "examples": ["<img src=\"image.jpg\" alt=\"Image\">"]
+    "examples": ["<img src=\"https://picsum.photos/200/300\" alt=\"Image\">"]
   },
   {
     "name": "input",
@@ -813,7 +813,7 @@
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<picture><source media=\"(min-width: 650px)\" srcset=\"image.jpg\"><source media=\"(min-width: 465px)\" srcset=\"image-small.jpg\"><img src=\"image.jpg\" alt=\"Image\"></picture>"
+      "<picture><source media=\"(min-width: 650px)\" srcset=\"https://picsum.photos/200/300\"><source media=\"(min-width: 465px)\" srcset=\"image-small.jpg\"><img src=\"https://picsum.photos\" alt=\"Image\"></picture>"
     ]
   },
   {
@@ -979,7 +979,7 @@
     "type": "inline",
     "selfClosing": true,
     "examples": [
-      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><source src=\"movie.ogg\" type=\"video/ogg\"></video>"
+      "<video controls><source src=\"https://www.shutterstock.com/shutterstock/videos/1103477533/preview/stock-footage-lorem-ipsum-animated-text-animation-lorem-ipsum-intro-your-video.webm\" type=\"video/mp4\"><source src=\"https://www.shutterstock.com/shutterstock/videos/1103477533/preview/stock-footage-lorem-ipsum-animated-text-animation-lorem-ipsum-intro-your-video.webm\" type=\"video/ogg\"></video>"
     ]
   },
   {
@@ -1187,7 +1187,7 @@
     "type": "inline",
     "selfClosing": true,
     "examples": [
-      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><track src=\"subtitles_en.vtt\" kind=\"subtitles\" srclang=\"en\" label=\"English\"></video>"
+      "<video controls><source src=\"https://www.shutterstock.com/shutterstock/videos/1103477533/preview/stock-footage-lorem-ipsum-animated-text-animation-lorem-ipsum-intro-your-video.webm\" type=\"video/mp4\"><track src=\"subtitles_en.vtt\" kind=\"subtitles\" srclang=\"en\" label=\"English\"></video>"
     ]
   },
   {
@@ -1233,7 +1233,7 @@
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"></video>"
+      "<video controls><source src=\"https://www.shutterstock.com/shutterstock/videos/1103477533/preview/stock-footage-lorem-ipsum-animated-text-animation-lorem-ipsum-intro-your-video.webm\" type=\"video/mp4\"></video>"
     ]
   },
   {
