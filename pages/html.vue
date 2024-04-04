@@ -1,3 +1,17 @@
+<script setup>
+import tags from "../server/tags.json";
+
+const q = ref("");
+
+const filterTags = () => {
+  return tags.filter((t) => t.name.includes(q.value.toLowerCase()));
+};
+
+const { locale } = useI18n();
+</script>
+
+<style lang="scss" scoped></style>
+
 <template>
   <input
     type="search"
@@ -8,7 +22,9 @@
   <table class="w-full">
     <tbody>
       <tr v-for="tag in filterTags()" :key="tag.name">
-        <td class="p-2 border border-solid">{{ tag.name }}</td>
+        <td class="p-2 border border-solid text-xl text-red-500">
+          {{ tag.name }}
+        </td>
         <td class="p-2 border border-solid">
           <p
             class="p-1"
@@ -49,25 +65,21 @@
             block
           </p>
         </td>
+        <td class="p-2 border border-solid w-[300px]">
+          {{ tag.description[locale] }}
+        </td>
         <td class="w-[400px] p-2 border border-solid">
           <p class="text-xs pb-2 border-b-2 border-solid">
             {{ tag.examples[0] }}
           </p>
-          <iframe :srcdoc="tag.examples[0]" width="100%" height="auto"></iframe>
+          <iframe
+            :srcdoc="tag.examples[0]"
+            width="100%"
+            height="50px"
+            class="overflow-y-auto"
+          ></iframe>
         </td>
       </tr>
     </tbody>
   </table>
 </template>
-
-<script setup>
-import tags from "../server/tags.json";
-
-const q = ref("");
-
-const filterTags = () => {
-  return tags.filter((t) => t.name.includes(q.value.toLowerCase()));
-};
-</script>
-
-<style lang="scss" scoped></style>

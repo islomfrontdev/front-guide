@@ -1,28 +1,44 @@
 [
   {
     "name": "a",
-    "description": "Defines a hyperlink.",
+    "description": {
+      "uz": "Havolani belgilaydi.",
+      "ru": "Определяет гиперссылку.",
+      "en": "Defines a hyperlink."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<a href=\"https://example.com\">Example</a>"]
   },
   {
     "name": "abbr",
-    "description": "Defines an abbreviation or an acronym.",
+    "description": {
+      "uz": "Qisqartmalar yoki akronimni aniqlaydi.",
+      "ru": "Определяет аббревиатуру или акроним.",
+      "en": "Defines an abbreviation or an acronym."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<abbr title=\"Hypertext Markup Language\">HTML</abbr>"]
   },
   {
     "name": "address",
-    "description": "Defines contact information for the author/owner of a document or an article.",
+    "description": {
+      "uz": "Hujjat yoki maqola muallifining aloqa ma'lumotlarini aniqlaydi.",
+      "ru": "Определяет контактную информацию автора или владельца документа или статьи.",
+      "en": "Defines contact information for the author/owner of a document or an article."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<address>123 Example St, City, Country</address>"]
   },
   {
     "name": "area",
-    "description": "Defines an area inside an image-map.",
+    "description": {
+      "uz": "Rasm-muqovasida joylashgan maydonni aniqlaydi.",
+      "ru": "Определяет область внутри изображения-карты.",
+      "en": "Defines an area inside an image-map."
+    },
     "type": "inline",
     "selfClosing": true,
     "examples": [
@@ -31,7 +47,11 @@
   },
   {
     "name": "article",
-    "description": "Defines independent, self-contained content.",
+    "description": {
+      "uz": "Mustaqil, o'zini o'z ichiga olgan tarkibni aniqlaydi.",
+      "ru": "Определяет независимое, самодостаточное содержимое.",
+      "en": "Defines independent, self-contained content."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
@@ -40,7 +60,11 @@
   },
   {
     "name": "aside",
-    "description": "Defines content aside from the content (like a sidebar).",
+    "description": {
+      "uz": "Asosiy tarkibdan tashqari tarkibni (masalan, yon panel) aniqlaydi.",
+      "ru": "Определяет контент помимо основного контента (например, боковую панель).",
+      "en": "Defines content aside from the content (like a sidebar)."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
@@ -49,7 +73,11 @@
   },
   {
     "name": "audio",
-    "description": "Defines sound content.",
+    "description": {
+      "uz": "Ovozli tarkibni aniqlaydi.",
+      "ru": "Определяет аудио-содержимое.",
+      "en": "Defines sound content."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
@@ -58,118 +86,190 @@
   },
   {
     "name": "b",
-    "description": "Defines bold text.",
+    "description": {
+      "uz": "Qalin matnni belgilaydi.",
+      "ru": "Определяет жирный текст.",
+      "en": "Defines bold text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>This is <b>bold</b> text.</p>"]
   },
   {
     "name": "base",
-    "description": "Specifies the base URL/target for all relative URLs in a document.",
-    "type": "meta",
+    "description": {
+      "uz": "Hujjatlardagi oid URL/maqsadni belgilaydi.",
+      "ru": "Указывает базовый URL/цель для всех относительных URL в документе.",
+      "en": "Specifies the base URL/target for all relative URLs in a document."
+    },
+    "type": "inline",
     "selfClosing": true,
-    "examples": ["<base href=\"https://example.com/\">"]
+    "examples": ["<head><base href=\"https://example.com/\"></head>"]
   },
   {
     "name": "bdi",
-    "description": "Isolates a part of text that might be formatted in a different direction from other text outside it.",
+    "description": {
+      "uz": "Dasturlama xarflarini burchaklagan ko'rsatkichni belgilaydi.",
+      "ru": "Определяет текст с направлением обратным к направлению базового текста.",
+      "en": "Defines text directionality that is isolated from its surroundings."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>This is <bdi>RTL text</bdi> inside LTR text.</p>"]
+    "examples": ["<p>This is <bdi>RTL text</bdi>.</p>"]
   },
   {
     "name": "bdo",
-    "description": "Overrides the current text direction.",
+    "description": {
+      "uz": "Matnning yonalishini belgilaydi.",
+      "ru": "Определяет направление текста.",
+      "en": "Defines the direction of text display."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>This is <bdo dir=\"rtl\">RTL text</bdo>.</p>"]
+    "examples": ["<p><bdo dir=\"rtl\">This is RTL text.</bdo></p>"]
   },
   {
     "name": "blockquote",
-    "description": "Defines a section that is quoted from another source.",
+    "description": {
+      "uz": "Matn bo'ylab sitatni belgilaydi.",
+      "ru": "Определяет блок цитаты.",
+      "en": "Defines a block quotation."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<blockquote><p>Quoted text goes here.</p></blockquote>"]
+    "examples": [
+      "<blockquote cite=\"https://example.com\">Quoted text goes here.</blockquote>"
+    ]
   },
   {
     "name": "body",
-    "description": "Defines the document's body.",
+    "description": {
+      "uz": "Hujjatning asosiy tarkibini belgilaydi.",
+      "ru": "Определяет основное содержимое документа.",
+      "en": "Defines the main content of a document."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<body><p>Body content goes here.</p></body>"]
+    "examples": ["<body><p>Main content goes here.</p></body>"]
   },
   {
     "name": "br",
-    "description": "Defines a line break.",
+    "description": {
+      "uz": "Qatorning yangi qatorga o'tish nuqtasini belgilaydi.",
+      "ru": "Определяет перенос строки.",
+      "en": "Defines a line break."
+    },
     "type": "inline",
     "selfClosing": true,
-    "examples": ["<p>This is<br>a line break.</p>"]
+    "examples": ["<p>First line<br>Second line</p>"]
   },
   {
     "name": "button",
-    "description": "Defines a clickable button.",
+    "description": {
+      "uz": "Tugmachani belgilaydi.",
+      "ru": "Определяет кнопку.",
+      "en": "Defines a button."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<button onclick=\"myFunction()\">Click Me</button>"]
+    "examples": ["<button type=\"button\">Click Me!</button>"]
   },
   {
     "name": "canvas",
-    "description": "Defines graphics.",
+    "description": {
+      "uz": "Matn, surat va grafikni belgilaydi.",
+      "ru": "Определяет область для рисования графики.",
+      "en": "Defines an area for drawing graphics."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": [
-      "<canvas id=\"myCanvas\" width=\"200\" height=\"100\" style=\"border:1px solid #000000;\"></canvas>"
+      "<canvas id=\"myCanvas\" width=\"200\" height=\"100\"></canvas>"
     ]
   },
   {
     "name": "caption",
-    "description": "Defines a table caption.",
-    "type": "block",
+    "description": {
+      "uz": "Jadval sarlavhasini belgilaydi.",
+      "ru": "Определяет заголовок таблицы.",
+      "en": "Defines a table caption."
+    },
+    "type": "inline",
     "selfClosing": false,
-    "examples": ["<caption>Table Caption</caption>"]
+    "examples": [
+      "<table><caption>Table Caption</caption><tr><td>Cell</td></tr></table>"
+    ]
   },
   {
     "name": "cite",
-    "description": "Defines the title of a work.",
+    "description": {
+      "uz": "Izohni belgilaydi.",
+      "ru": "Определяет цитируемую работу.",
+      "en": "Defines a citation."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>According to <cite>source</cite>, this is a quote.</p>"]
+    "examples": ["<p>The book <cite>My Life</cite> is a great read.</p>"]
   },
   {
     "name": "code",
-    "description": "Defines a piece of computer code.",
+    "description": {
+      "uz": "Kod belgilaydi.",
+      "ru": "Определяет фрагмент кода.",
+      "en": "Defines a piece of computer code."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>This is a <code>code</code> example.</p>"]
+    "examples": [
+      "<p>Enter <code>print('Hello, World!')</code> to display a message.</p>"
+    ]
   },
   {
     "name": "col",
-    "description": "Defines attributes for table columns that apply to all the columns within the <colgroup> element.",
-    "type": "meta",
+    "description": {
+      "uz": "Jadval ustunlarini belgilaydi.",
+      "ru": "Определяет свойства столбца для ячеек в пределах колонки в таблице.",
+      "en": "Specifies column properties for each column within a <colgroup> element."
+    },
+    "type": "inline",
     "selfClosing": true,
-    "examples": ["<col width=\"100\">"]
+    "examples": [
+      "<table><colgroup><col span=\"2\" style=\"background-color:red\"></colgroup><tr><td>Cell 1</td><td>Cell 2</td></tr></table>"
+    ]
   },
   {
     "name": "colgroup",
-    "description": "Defines a group of one or more columns in a table for formatting.",
+    "description": {
+      "uz": "Jadval ustunlar guruhi belgilaydi.",
+      "ru": "Определяет группу колонок в таблице.",
+      "en": "Specifies a group of one or more columns in a table for formatting."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<colgroup><col span=\"2\" style=\"background-color:#f0f0f0\"><col style=\"background-color:#cccccc\"></colgroup>"
+      "<table><colgroup><col span=\"2\" style=\"background-color:red\"></colgroup><tr><td>Cell 1</td><td>Cell 2</td></tr></table>"
     ]
   },
   {
     "name": "data",
-    "description": "Links the given content with a machine-readable translation.",
+    "description": {
+      "uz": "Oxirgi qiymatni belgilaydi.",
+      "ru": "Определяет машинно-читаемые данные.",
+      "en": "Defines machine-readable data."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": [
-      "<p>My phone number is <data value=\"123456\">123-456</data>.</p>"
+      "<p>The population of <data value=\"Tokyo\">Tokyo</data> is 9,273,000.</p>"
     ]
   },
   {
     "name": "datalist",
-    "description": "Specifies a list of pre-defined options for input controls.",
+    "description": {
+      "uz": "Foydalanuvchi kiritishi mumkin bo'lgan variantlar ro'yxatini belgilaydi.",
+      "ru": "Определяет список вариантов для элемента <input>.",
+      "en": "Specifies a list of pre-defined options for input controls."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
@@ -178,580 +278,831 @@
   },
   {
     "name": "dd",
-    "description": "Defines a description/value of a term in a description list.",
+    "description": {
+      "uz": "Tushunishni belgilaydi.",
+      "ru": "Определяет описание элемента списка.",
+      "en": "Defines a description/value of a term in a description list."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"]
+    "examples": ["<dl><dt>Term</dt><dd>Description</dd></dl>"]
   },
   {
     "name": "del",
-    "description": "Defines text that has been deleted from a document.",
+    "description": {
+      "uz": "O'chirilgan matnni belgilaydi.",
+      "ru": "Определяет удаленный текст.",
+      "en": "Defines a deleted text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>This is <del>deleted</del> text.</p>"]
   },
   {
     "name": "details",
-    "description": "Defines additional details that the user can view or hide.",
+    "description": {
+      "uz": "Tafsilotlar oynasini belgilaydi.",
+      "ru": "Определяет элемент с дополнительной информацией, которая может быть отображена или скрыта по желанию пользователя.",
+      "en": "Defines additional information that the user can view or hide."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<details><summary>Details</summary><p>Details content goes here.</p></details>"
+      "<details><summary>Details</summary><p>Additional information goes here.</p></details>"
     ]
   },
   {
     "name": "dfn",
-    "description": "Defines a definition term.",
+    "description": {
+      "uz": "Izohlanayotgan terminni belgilaydi.",
+      "ru": "Определяет определение термина.",
+      "en": "Defines a definition term."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p><dfn>HTML</dfn> stands for Hypertext Markup Language.</p>"]
   },
   {
     "name": "dialog",
-    "description": "Defines a dialog box or window.",
+    "description": {
+      "uz": "Qissalashtirilgan dialog oynasini belgilaydi.",
+      "ru": "Определяет диалоговое окно.",
+      "en": "Defines a dialog box or window."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<dialog open>This is a dialog box.</dialog>"]
+    "examples": ["<dialog open>This is a dialog window.</dialog>"]
   },
   {
     "name": "div",
-    "description": "Defines a division or a section in an HTML document.",
+    "description": {
+      "uz": "Hujjatni qismga bo'laydi.",
+      "ru": "Определяет секцию документа.",
+      "en": "Defines a section in a document."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<div>This is a division.</div>"]
+    "examples": ["<div><p>Content goes here.</p></div>"]
   },
   {
     "name": "dl",
-    "description": "Defines a description list.",
+    "description": {
+      "uz": "Izohlash ro'yxatini belgilaydi.",
+      "ru": "Определяет список определений.",
+      "en": "Defines a description list."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"]
+    "examples": ["<dl><dt>Term</dt><dd>Description</dd></dl>"]
   },
   {
     "name": "dt",
-    "description": "Defines a term/name in a description list.",
+    "description": {
+      "uz": "Izohlangan terminni belgilaydi.",
+      "ru": "Определяет элемент списка определений.",
+      "en": "Defines a term/name in a description list."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<dl><dt>Coffee</dt><dd>Black hot drink</dd></dl>"]
+    "examples": ["<dl><dt>Term</dt><dd>Description</dd></dl>"]
   },
   {
     "name": "em",
-    "description": "Defines emphasized text.",
+    "description": {
+      "uz": "Yengil matnni belgilaydi.",
+      "ru": "Определяет текст с ударением.",
+      "en": "Defines emphasized text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>This is <em>emphasized</em> text.</p>"]
   },
   {
     "name": "embed",
-    "description": "Defines a container for an external application or interactive content (eg. a plugin).",
+    "description": {
+      "uz": "Chizma ichidagi mulokot qiluvchi tarkibni belgilaydi (masalan, boshqaruv paneli).",
+      "ru": "Определяет встроенное интерактивное содержимое или плагин.",
+      "en": "Defines embedded interactive content or a plugin."
+    },
     "type": "inline",
     "selfClosing": true,
-    "examples": ["<embed src=\"helloworld.swf\" width=\"300\" height=\"120\">"]
+    "examples": ["<embed src=\"helloworld.swf\">"]
   },
   {
     "name": "fieldset",
-    "description": "Groups related elements in a form.",
+    "description": {
+      "uz": "Bir qator ichidagi bir nechta form elementlarini belgilaydi.",
+      "ru": "Определяет группу элементов формы.",
+      "en": "Groups related elements in a form."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<fieldset><legend>Legend</legend><p>Fieldset content goes here.</p></fieldset>"
+      "<form><fieldset><legend>Fieldset</legend><input type=\"text\"><input type=\"submit\"></fieldset></form>"
     ]
   },
   {
     "name": "figcaption",
-    "description": "Defines a caption for a <figure> element.",
+    "description": {
+      "uz": "Rasmga sarlavha qo'shadi.",
+      "ru": "Определяет заголовок к фигуре.",
+      "en": "Defines a caption for a <figure> element."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<figure><img src=\"pic.jpg\" alt=\"Description\"><figcaption>Caption</figcaption></figure>"
+      "<figure><img src=\"image.jpg\"><figcaption>Image caption</figcaption></figure>"
     ]
   },
   {
     "name": "figure",
-    "description": "Specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.",
+    "description": {
+      "uz": "Obyektni belgilaydi, masalan, rasm.",
+      "ru": "Определяет независимый контент, например, рисунок, диаграмму, фотографию, код, таблицу и т. д.",
+      "en": "Defines self-contained content, like a figure, illustration, photo, code snippet, etc."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<figure><img src=\"pic.jpg\" alt=\"Description\"><figcaption>Caption</figcaption></figure>"
+      "<figure><img src=\"image.jpg\"><figcaption>Image caption</figcaption></figure>"
     ]
   },
   {
     "name": "footer",
-    "description": "Defines a footer for a document or section.",
+    "description": {
+      "uz": "Hujjatni quyi qismi belgilaydi.",
+      "ru": "Определяет нижнюю часть документа или раздела.",
+      "en": "Defines a footer for a document or section."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<footer>Footer content goes here.</footer>"]
+    "examples": ["<footer><p>Footer content goes here.</p></footer>"]
   },
   {
     "name": "form",
-    "description": "Defines an HTML form for user input.",
+    "description": {
+      "uz": "Ma'lumotlar kiritish uchun formani belgilaydi.",
+      "ru": "Определяет форму для ввода данных пользователя.",
+      "en": "Defines a form for user input."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<form action=\"/submit-form\" method=\"post\"><input type=\"text\" name=\"name\"><input type=\"submit\" value=\"Submit\"></form>"
+      "<form action=\"/submit\" method=\"post\"><input type=\"text\"><input type=\"submit\"></form>"
     ]
   },
   {
-    "name": "h1",
-    "description": "Defines HTML heading level 1.",
+    "name": "h1 - h6",
+    "description": {
+      "uz": "Sarlavhani belgilaydi.",
+      "ru": "Определяет заголовок.",
+      "en": "Defines a heading."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<h1>Heading 1</h1>"]
-  },
-  {
-    "name": "h2",
-    "description": "Defines HTML heading level 2.",
-    "type": "block",
-    "selfClosing": false,
-    "examples": ["<h2>Heading 2</h2>"]
-  },
-  {
-    "name": "h3",
-    "description": "Defines HTML heading level 3.",
-    "type": "block",
-    "selfClosing": false,
-    "examples": ["<h3>Heading 3</h3>"]
-  },
-  {
-    "name": "h4",
-    "description": "Defines HTML heading level 4.",
-    "type": "block",
-    "selfClosing": false,
-    "examples": ["<h4>Heading 4</h4>"]
-  },
-  {
-    "name": "h5",
-    "description": "Defines HTML heading level 5.",
-    "type": "block",
-    "selfClosing": false,
-    "examples": ["<h5>Heading 5</h5>"]
-  },
-  {
-    "name": "h6",
-    "description": "Defines HTML heading level 6.",
-    "type": "block",
-    "selfClosing": false,
-    "examples": ["<h6>Heading 6</h6>"]
+    "examples": ["<h1>Main Heading</h1>"]
   },
   {
     "name": "head",
-    "description": "Defines information about the document.",
-    "type": "meta",
+    "description": {
+      "uz": "Hujjatning ma'lumotlari uchun sarlavkani belgilaydi.",
+      "ru": "Определяет информацию о документе.",
+      "en": "Defines information about the document."
+    },
+    "type": "block",
     "selfClosing": false,
     "examples": ["<head><title>Document Title</title></head>"]
   },
   {
     "name": "header",
-    "description": "Defines a header for a document or section.",
+    "description": {
+      "uz": "Hujjatning sarlavhasini belgilaydi.",
+      "ru": "Определяет верхнюю часть документа или раздела.",
+      "en": "Defines a header for a document or section."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<header>Header content goes here.</header>"]
+    "examples": ["<header><h1>Header Title</h1></header>"]
   },
   {
     "name": "hr",
-    "description": "Defines a thematic break (horizontal rule).",
-    "type": "block",
+    "description": {
+      "uz": "Qatorning aniq qismga bo'lgan katta chiziqlarni belgilaydi.",
+      "ru": "Определяет горизонтальную линию.",
+      "en": "Defines a thematic break between paragraphs."
+    },
+    "type": "inline",
     "selfClosing": true,
-    "examples": ["<p>This is a paragraph.<hr>This is another paragraph.</p>"]
+    "examples": ["<p>Paragraph 1</p><hr><p>Paragraph 2</p>"]
   },
   {
     "name": "html",
-    "description": "Defines the root of an HTML document.",
-    "type": "meta",
+    "description": {
+      "uz": "Hujjatning o'zini aniqlaydi.",
+      "ru": "Определяет корневой элемент документа.",
+      "en": "Defines the root of an HTML document."
+    },
+    "type": "block",
     "selfClosing": false,
     "examples": [
-      "<!DOCTYPE html><html><head><title>Document Title</title></head><body>Body content goes here.</body></html>"
+      "<!DOCTYPE html><html><head><title>Document Title</title></head><body><p>Content goes here.</p></body></html>"
     ]
   },
   {
     "name": "i",
-    "description": "Defines italic text.",
+    "description": {
+      "uz": "Yondashuvli matnni belgilaydi.",
+      "ru": "Определяет курсивный текст.",
+      "en": "Defines italic text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>This is <i>italic</i> text.</p>"]
   },
   {
     "name": "iframe",
-    "description": "Defines an inline frame.",
-    "type": "block",
+    "description": {
+      "uz": "Ichki rasmni aniqlaydi.",
+      "ru": "Определяет встроенный фрейм.",
+      "en": "Defines an inline frame."
+    },
+    "type": "inline",
     "selfClosing": false,
-    "examples": [
-      "<iframe src=\"demo_iframe.htm\" height=\"200\" width=\"300\"></iframe>"
-    ]
+    "examples": ["<iframe src=\"https://example.com\"></iframe>"]
   },
   {
     "name": "img",
-    "description": "Defines an image.",
+    "description": {
+      "uz": "Rasmni aniqlaydi.",
+      "ru": "Определяет изображение.",
+      "en": "Defines an image."
+    },
     "type": "inline",
     "selfClosing": true,
-    "examples": ["<img src=\"image.jpg\" alt=\"Description\">"]
+    "examples": ["<img src=\"image.jpg\" alt=\"Image\">"]
   },
   {
     "name": "input",
-    "description": "Defines an input control.",
+    "description": {
+      "uz": "Kiritish elementi belgilaydi.",
+      "ru": "Определяет элемент для ввода данных пользователем.",
+      "en": "Defines an input control."
+    },
     "type": "inline",
     "selfClosing": true,
-    "examples": ["<input type=\"text\" name=\"fname\" value=\"John\">"]
+    "examples": ["<input type=\"text\">"]
   },
   {
     "name": "ins",
-    "description": "Defines a text that has been inserted into a document.",
+    "description": {
+      "uz": "Qo'shilgan matnni belgilaydi.",
+      "ru": "Определяет добавленный текст.",
+      "en": "Defines an inserted text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>This is <ins>inserted</ins> text.</p>"]
   },
   {
     "name": "kbd",
-    "description": "Defines keyboard input.",
+    "description": {
+      "uz": "Klavish chiziqlarini belgilaydi.",
+      "ru": "Определяет текст на клавиатуре.",
+      "en": "Defines keyboard text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>Press <kbd>Ctrl</kbd> + <kbd>C</kbd> to copy.</p>"]
   },
   {
     "name": "label",
-    "description": "Defines a label for an <input> element.",
+    "description": {
+      "uz": "Forma elementini belgilaydi.",
+      "ru": "Определяет метку для элемента формы.",
+      "en": "Defines a label for an <input> element."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": [
-      "<label for=\"fname\">First name:</label><input type=\"text\" id=\"fname\" name=\"fname\">"
+      "<label for=\"username\">Username:</label><input type=\"text\" id=\"username\">"
     ]
   },
   {
     "name": "legend",
-    "description": "Defines a caption for a <fieldset> element.",
-    "type": "block",
+    "description": {
+      "uz": "Fieldset sarlavhasini belgilaydi.",
+      "ru": "Определяет заголовок для элемента <fieldset>.",
+      "en": "Defines a caption for a <fieldset> element."
+    },
+    "type": "inline",
     "selfClosing": false,
-    "examples": [
-      "<fieldset><legend>Legend</legend><p>Fieldset content goes here.</p></fieldset>"
-    ]
+    "examples": ["<fieldset><legend>Fieldset</legend></fieldset>"]
   },
   {
     "name": "li",
-    "description": "Defines a list item.",
+    "description": {
+      "uz": "Ro'yxat elementini belgilaydi.",
+      "ru": "Определяет элемент списка.",
+      "en": "Defines a list item."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<ul><li>Item 1</li><li>Item 2</li></ul>"]
   },
   {
     "name": "link",
-    "description": "Defines the relationship between a document and an external resource (most used to link to stylesheets).",
-    "type": "meta",
+    "description": {
+      "uz": "Hujjatning lokalizatsiyasini aniqlaydi.",
+      "ru": "Определяет ссылку на внешний ресурс.",
+      "en": "Defines the relationship between a document and an external resource."
+    },
+    "type": "inline",
     "selfClosing": true,
-    "examples": [
-      "<link rel=\"stylesheet\" type=\"text/css\" href=\"styles.css\">"
-    ]
+    "examples": ["<head><link rel=\"stylesheet\" href=\"styles.css\"></head>"]
   },
   {
     "name": "main",
-    "description": "Defines the main content of a document.",
+    "description": {
+      "uz": "Asosiy tarkibni belgilaydi.",
+      "ru": "Определяет основное содержимое документа.",
+      "en": "Defines the main content of a document."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<main>Main content goes here.</main>"]
+    "examples": ["<main><p>Main content goes here.</p></main>"]
   },
   {
     "name": "map",
-    "description": "Defines a client-side image-map.",
-    "type": "block",
+    "description": {
+      "uz": "Rasmning maydonlarini belgilaydi.",
+      "ru": "Определяет клиентскую карту изображения.",
+      "en": "Defines a client-side image-map."
+    },
+    "type": "inline",
     "selfClosing": false,
     "examples": [
-      "<map name=\"workmap\"><area shape=\"rect\" coords=\"34,44,270,350\" alt=\"Computer\" href=\"computer.htm\"></map>"
+      "<img src=\"planets.gif\" usemap=\"#planetmap\"><map name=\"planetmap\"><area shape=\"rect\" coords=\"0,0,82,126\" href=\"sun.htm\" alt=\"Sun\"><area shape=\"circle\" coords=\"90,58,3\" href=\"mercur.htm\" alt=\"Mercury\"><area shape=\"circle\" coords=\"124,58,8\" href=\"venus.htm\" alt=\"Venus\"></map>"
     ]
   },
   {
     "name": "mark",
-    "description": "Defines marked/highlighted text.",
+    "description": {
+      "uz": "Texnik dastlabki belgilarni qo'shaydi.",
+      "ru": "Определяет отмеченный (выделенный) текст.",
+      "en": "Defines marked/highlighted text."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>This is <mark>highlighted</mark> text.</p>"]
+    "examples": [
+      "<p>Search for the keyword <mark>HTML</mark> in this document.</p>"
+    ]
   },
   {
     "name": "menu",
-    "description": "Defines a list/menu of commands.",
+    "description": {
+      "uz": "Xususiy tarkibni aniqlaydi.",
+      "ru": "Определяет список команд/пунктов меню.",
+      "en": "Defines a list/menu of commands."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<menu type=\"context\"><menuitem>Copy</menuitem><menuitem>Paste</menuitem></menu>"
+      "<menu><li><a href=\"#\">Home</a></li><li><a href=\"#\">About</a></li></menu>"
     ]
   },
   {
     "name": "meta",
-    "description": "Defines metadata about an HTML document.",
-    "type": "meta",
+    "description": {
+      "uz": "Hujjatning metatags sifatini belgilaydi.",
+      "ru": "Определяет метатеги для документа.",
+      "en": "Defines metadata about an HTML document."
+    },
+    "type": "inline",
     "selfClosing": true,
-    "examples": ["<meta charset=\"UTF-8\">"]
+    "examples": [
+      "<head><meta charset=\"UTF-8\"><meta name=\"description\" content=\"Free Web tutorials\"></head>"
+    ]
   },
   {
     "name": "meter",
-    "description": "Defines a scalar measurement within a known range (a gauge).",
+    "description": {
+      "uz": "O'zgaruvchan qiymatlarni belgilaydi.",
+      "ru": "Определяет изменяемый диапазон.",
+      "en": "Defines a scalar measurement within a known range."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<meter value=\"2\" min=\"0\" max=\"10\">2 out of 10</meter>"]
   },
   {
     "name": "nav",
-    "description": "Defines navigation links.",
+    "description": {
+      "uz": "Hujjatning navigatsiya qismi belgilaydi.",
+      "ru": "Определяет навигационную ссылку.",
+      "en": "Defines navigation links."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": [
-      "<nav><a href=\"/home\">Home</a> | <a href=\"/about\">About</a></nav>"
-    ]
+    "examples": ["<nav><a href=\"#\">Home</a><a href=\"#\">About</a></nav>"]
   },
   {
     "name": "noscript",
-    "description": "Defines an alternate content for users that do not support client-side scripts.",
+    "description": {
+      "uz": "Skriptlar o'chirilganda ko'rinadi.",
+      "ru": "Определяет содержимое, которое должно быть отображено, когда скрипты не поддерживаются.",
+      "en": "Defines alternate content to be displayed when scripts are not supported."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<noscript>Your browser does not support JavaScript!</noscript>"
+      "<noscript><p>JavaScript is disabled in your browser.</p></noscript>"
     ]
   },
   {
     "name": "object",
-    "description": "Defines an embedded object.",
-    "type": "block",
+    "description": {
+      "uz": "Ichki mulokot qiluvchi tarkibni belgilaydi.",
+      "ru": "Определяет встроенный объект.",
+      "en": "Defines an embedded object."
+    },
+    "type": "inline",
     "selfClosing": false,
-    "examples": [
-      "<object data=\"helloworld.swf\" width=\"300\" height=\"200\"></object>"
-    ]
+    "examples": ["<object data=\"helloworld.swf\"></object>"]
   },
   {
     "name": "ol",
-    "description": "Defines an ordered list.",
+    "description": {
+      "uz": "Tartiblangan ro'yxatni belgilaydi.",
+      "ru": "Определяет упорядоченный список.",
+      "en": "Defines an ordered list."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<ol><li>Item 1</li><li>Item 2</li></ol>"]
   },
   {
     "name": "optgroup",
-    "description": "Defines a group of related options in a dropdown list.",
+    "description": {
+      "uz": "Ro'yhatdagi sub-kategoriyalarni belgilaydi.",
+      "ru": "Определяет группу вариантов выбора в выпадающем списке.",
+      "en": "Defines a group of related options in a drop-down list."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<select name=\"cars\"><optgroup label=\"Swedish Cars\"><option value=\"volvo\">Volvo</option></optgroup></select>"
+      "<select><optgroup label=\"Group\"><option value=\"1\">Option 1</option><option value=\"2\">Option 2</option></optgroup></select>"
     ]
   },
   {
     "name": "option",
-    "description": "Defines an option in a dropdown list.",
+    "description": {
+      "uz": "Variantlarni belgilaydi.",
+      "ru": "Определяет вариант выбора в списке.",
+      "en": "Defines an option in a drop-down list."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<select name=\"cars\"><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option></select>"
+      "<select><option value=\"1\">Option 1</option><option value=\"2\">Option 2</option></select>"
     ]
   },
   {
     "name": "output",
-    "description": "Defines the result of a calculation.",
+    "description": {
+      "uz": "Hisoblanayotgan qiymatlarni belgilaydi.",
+      "ru": "Определяет выходные данные из формы.",
+      "en": "Defines the result of a calculation."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<output name=\"result\" for=\"x y\">5</output>"]
+    "examples": [
+      "<form oninput=\"x.value=parseInt(a.value)+parseInt(b.value)\"><input type=\"range\" id=\"a\" value=\"50\"><input type=\"number\" id=\"b\" value=\"100\"><output name=\"x\"></output></form>"
+    ]
   },
   {
     "name": "p",
-    "description": "Defines a paragraph.",
+    "description": {
+      "uz": "Matnni belgilaydi.",
+      "ru": "Определяет абзац.",
+      "en": "Defines a paragraph."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<p>This is a paragraph.</p>"]
   },
   {
     "name": "param",
-    "description": "Defines a parameter for an object.",
-    "type": "meta",
+    "description": {
+      "uz": "Chizmaning parametrlarini belgilaydi.",
+      "ru": "Определяет параметры объекта.",
+      "en": "Defines parameters for an object."
+    },
+    "type": "inline",
     "selfClosing": true,
     "examples": [
-      "<object data=\"helloworld.swf\"><param name=\"movie\" value=\"helloworld.swf\"></object>"
+      "<object data=\"helloworld.swf\"><param name=\"loop\" value=\"true\"></object>"
     ]
   },
   {
     "name": "picture",
-    "description": "Defines a container for multiple image sources.",
+    "description": {
+      "uz": "Obyektni belgilaydi, masalan, rasm.",
+      "ru": "Определяет независимый контент, например, рисунок, диаграмму, фотографию, код, таблицу и т. д.",
+      "en": "Defines self-contained content, like a figure, illustration, photo, code snippet, etc."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<picture><source srcset=\"img_smallflower.jpg\" media=\"(max-width: 600px)\"><source srcset=\"img_flowers.jpg\"><img src=\"img_flowers.jpg\" alt=\"Flowers\"></picture>"
+      "<picture><source media=\"(min-width: 650px)\" srcset=\"image.jpg\"><source media=\"(min-width: 465px)\" srcset=\"image-small.jpg\"><img src=\"image.jpg\" alt=\"Image\"></picture>"
     ]
   },
   {
     "name": "pre",
-    "description": "Defines preformatted text.",
+    "description": {
+      "uz": "Oldingi formatda matnni saqlaydi.",
+      "ru": "Определяет форматированный текст.",
+      "en": "Defines preformatted text."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<pre>This is preformatted text.</pre>"]
   },
   {
     "name": "progress",
-    "description": "Defines the progress of a task.",
+    "description": {
+      "uz": "O'zgaruvchan yuqori qiymatni belgilaydi.",
+      "ru": "Определяет индикатор выполнения.",
+      "en": "Defines a progress indicator."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<progress value=\"22\" max=\"100\">22%</progress>"]
+    "examples": ["<progress value=\"50\" max=\"100\">50%</progress>"]
   },
   {
     "name": "q",
-    "description": "Defines a short quotation.",
+    "description": {
+      "uz": "Bir qator sitatni belgilaydi.",
+      "ru": "Определяет встроенную цитату.",
+      "en": "Defines a short inline quotation."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>According to <q>source</q>, this is a quote.</p>"]
+    "examples": ["<p>This is a <q>short quote</q>.</p>"]
   },
   {
     "name": "rp",
-    "description": "Defines what to show in browsers that do not support ruby annotations.",
+    "description": {
+      "uz": "Faqat bidi belgilangan matnlarni belgilaydi.",
+      "ru": "Определяет местоположение замещающего содержимого.",
+      "en": "Defines what to show in browsers that do not support ruby annotations."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<ruby><rb>1</rb><rp>(</rp><rt>One</rt><rp>)</rp></ruby>"]
+    "examples": [
+      "<ruby><rb>Base text</rb><rp>(</rp><rt>explanation</rt><rp>)</rp></ruby>"
+    ]
   },
   {
     "name": "rt",
-    "description": "Defines an explanation/pronunciation of characters (for East Asian typography).",
+    "description": {
+      "uz": "Rubyni belgilaydi.",
+      "ru": "Определяет объяснение (произношение) надписи в китайских, японских или корейских документах.",
+      "en": "Defines an explanation (pronunciation) of characters (for East Asian typography)."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<ruby><rb>1</rb><rp>(</rp><rt>One</rt><rp>)</rp></ruby>"]
+    "examples": [
+      "<ruby><rb>Base text</rb><rp>(</rp><rt>explanation</rt><rp>)</rp></ruby>"
+    ]
+  },
+  {
+    "name": "rtc",
+    "description": {
+      "uz": "Rubyni bidi belgilangan matnlarni belgilaydi.",
+      "ru": "Определяет контейнер для совместного отображения руби-позиционированных элементов и их применяемых аннотаций.",
+      "en": "Encloses pronunciation information in a ruby annotation."
+    },
+    "type": "inline",
+    "selfClosing": false,
+    "examples": [
+      "<ruby><rb>Base text</rb><rtc><rt>explanation</rt><rp>(</rp></rtc><rp>)</rp></ruby>"
+    ]
   },
   {
     "name": "ruby",
-    "description": "Defines a ruby annotation (for East Asian typography).",
+    "description": {
+      "uz": "Nofusli matn elementlarini belgilaydi.",
+      "ru": "Определяет объяснения (произношения) к тексту на китайских, японских или корейских языках.",
+      "en": "Defines ruby annotations for East Asian typography."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<ruby><rb>1</rb><rp>(</rp><rt>One</rt><rp>)</rp></ruby>"]
+    "examples": [
+      "<ruby><rb>Base text</rb><rp>(</rp><rt>explanation</rt><rp>)</rp></ruby>"
+    ]
   },
   {
     "name": "s",
-    "description": "Defines text that is no longer correct or relevant.",
+    "description": {
+      "uz": "O'chirilgan matnni belgilaydi.",
+      "ru": "Определяет перечеркнутый текст.",
+      "en": "Defines text that is no longer correct or relevant."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>This is <s>strikethrough</s> text.</p>"]
+    "examples": ["<p>This is <s>no longer valid</s> text.</p>"]
   },
   {
     "name": "samp",
-    "description": "Defines sample output from a computer program.",
+    "description": {
+      "uz": "Kerakli kodi namoyish etadi.",
+      "ru": "Определяет вывод программы.",
+      "en": "Defines sample output from a computer program."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>This is <samp>sample</samp> text.</p>"]
+    "examples": ["<p>The output is <samp>Sample Text</samp>.</p>"]
   },
   {
     "name": "script",
-    "description": "Defines a client-side script.",
-    "type": "meta",
+    "description": {
+      "uz": "Skriptni aniqlaydi.",
+      "ru": "Определяет скрипт.",
+      "en": "Defines a client-side script."
+    },
+    "type": "block",
     "selfClosing": false,
-    "examples": ["<script>console.log('Hello, World!');</script>"]
+    "examples": ["<script>console.log(\"Hello World!\");</script>"]
   },
   {
     "name": "section",
-    "description": "Defines a section in a document.",
+    "description": {
+      "uz": "Hujjatni qismga bo'laydi.",
+      "ru": "Определяет раздел документа.",
+      "en": "Defines a section in a document."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<section>Section content goes here.</section>"]
+    "examples": ["<section><p>Section content goes here.</p></section>"]
   },
   {
     "name": "select",
-    "description": "Defines a dropdown list.",
+    "description": {
+      "uz": "Ravishlarni belgilaydi.",
+      "ru": "Определяет список выбора.",
+      "en": "Defines a drop-down list."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<select name=\"cars\"><option value=\"volvo\">Volvo</option><option value=\"saab\">Saab</option></select>"
+      "<select><option value=\"1\">Option 1</option><option value=\"2\">Option 2</option></select>"
     ]
   },
   {
     "name": "small",
-    "description": "Defines smaller text.",
+    "description": {
+      "uz": "Matnni kichik shriftga belgilaydi.",
+      "ru": "Определяет текст поменьше основного текста.",
+      "en": "Defines smaller text."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>This is <small>small</small> text.</p>"]
+    "examples": ["<p>This is <small>smaller</small> text.</p>"]
   },
   {
     "name": "source",
-    "description": "Defines multiple media resources for media elements (<video> and <audio>).",
-    "type": "meta",
+    "description": {
+      "uz": "Media resurslarining bir qismi uchun amal qiladi.",
+      "ru": "Определяет медиаресурс для <video> и <audio> элементов.",
+      "en": "Defines multiple media resources for media elements (<video> and <audio>)."
+    },
+    "type": "inline",
     "selfClosing": true,
     "examples": [
-      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><source src=\"movie.ogg\" type=\"video/ogg\">Your browser does not support the video tag.</video>"
+      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><source src=\"movie.ogg\" type=\"video/ogg\"></video>"
     ]
   },
   {
     "name": "span",
-    "description": "Defines a section in a document.",
+    "description": {
+      "uz": "Matnni biror qatorning qismiga qo'yadi.",
+      "ru": "Определяет строчный элемент без семантического значения.",
+      "en": "Defines a section in a document."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<span style=\"color:red\">This is a span.</span>"]
+    "examples": ["<p><span style=\"color: blue;\">This is a span.</span></p>"]
   },
   {
     "name": "strong",
-    "description": "Defines strong importance.",
+    "description": {
+      "uz": "Kuchli matnni belgilaydi.",
+      "ru": "Определяет важный текст.",
+      "en": "Defines important text."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>This is <strong>strong</strong> text.</p>"]
+    "examples": ["<p>This is <strong>important</strong> text.</p>"]
   },
   {
     "name": "style",
-    "description": "Defines style information for a document.",
-    "type": "meta",
+    "description": {
+      "uz": "HTML dokumenti uchun stil belgilaydi.",
+      "ru": "Определяет стиль элементов.",
+      "en": "Defines style information for a document."
+    },
+    "type": "block",
     "selfClosing": false,
-    "examples": ["<style>body { background-color: lightblue; }</style>"]
+    "examples": ["<style>body { background-color: linen; }</style>"]
   },
   {
     "name": "sub",
-    "description": "Defines subscripted text.",
+    "description": {
+      "uz": "Nofusli matnning pastki qismini belgilaydi.",
+      "ru": "Определяет подстрочный текст.",
+      "en": "Defines subscripted text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>This is <sub>subscripted</sub> text.</p>"]
   },
   {
     "name": "summary",
-    "description": "Defines a visible heading for a <details> element.",
-    "type": "inline",
+    "description": {
+      "uz": "Tafsilotning sarlavhasini belgilaydi.",
+      "ru": "Определяет заголовок для элемента <details>.",
+      "en": "Defines a heading for the <details> element."
+    },
+    "type": "block",
     "selfClosing": false,
     "examples": [
-      "<details><summary>Details</summary><p>Details content goes here.</p></details>"
+      "<details><summary>Details</summary><p>Additional information goes here.</p></details>"
     ]
   },
   {
     "name": "sup",
-    "description": "Defines superscripted text.",
+    "description": {
+      "uz": "Nofusli matnning yuqori qismini belgilaydi.",
+      "ru": "Определяет надстрочный текст.",
+      "en": "Defines superscripted text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>This is <sup>superscripted</sup> text.</p>"]
   },
   {
-    "name": "svg",
-    "description": "Defines a container for SVG graphics.",
-    "type": "inline",
-    "selfClosing": false,
-    "examples": [
-      "<svg width=\"100\" height=\"100\"><circle cx=\"50\" cy=\"50\" r=\"40\" stroke=\"black\" stroke-width=\"3\" fill=\"red\" /></svg>"
-    ]
-  },
-  {
     "name": "table",
-    "description": "Defines a table.",
+    "description": {
+      "uz": "Jadvalni belgilaydi.",
+      "ru": "Определяет таблицу.",
+      "en": "Defines a table."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<table><tr><th>Header</th></tr><tr><td>Data</td></tr></table>"
+      "<table><tr><th>Header</th></tr><tr><td>Cell</td></tr></table>"
     ]
   },
   {
     "name": "tbody",
-    "description": "Defines a group of rows in a table.",
+    "description": {
+      "uz": "Jadvalning asosiy matnini belgilaydi.",
+      "ru": "Определяет основное содержание таблицы.",
+      "en": "Groups the body content in a table."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<table><tbody><tr><td>Data</td></tr></tbody></table>"]
+    "examples": ["<table><tbody><tr><td>Cell</td></tr></tbody></table>"]
   },
   {
     "name": "td",
-    "description": "Defines a cell in a table.",
+    "description": {
+      "uz": "Jadvalning ustuni belgilaydi.",
+      "ru": "Определяет ячейку в таблице.",
+      "en": "Defines a cell in a table."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<table><tr><td>Data</td></tr></table>"]
+    "examples": ["<table><tr><td>Cell</td></tr></table>"]
   },
   {
     "name": "template",
-    "description": "Defines a container for content that should be hidden when the page loads.",
-    "type": "meta",
+    "description": {
+      "uz": "Klonlash uchun qablonni belgilaydi.",
+      "ru": "Определяет содержимое, которое скрыто от пользователя.",
+      "en": "Defines content that is hidden from the user."
+    },
+    "type": "block",
     "selfClosing": false,
-    "examples": ["<template>Template content goes here.</template>"]
+    "examples": ["<template><p>Template content goes here.</p></template>"]
   },
   {
     "name": "textarea",
-    "description": "Defines a multiline input control (text area).",
+    "description": {
+      "uz": "Matnni ko'rsatkichlarni yozishga ruxsat beradi.",
+      "ru": "Определяет элемент управления для ввода многострочного текста.",
+      "en": "Defines a control for multiline text input."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
@@ -760,50 +1111,80 @@
   },
   {
     "name": "tfoot",
-    "description": "Defines a footer for a table.",
+    "description": {
+      "uz": "Jadvalning qiymatlarini belgilaydi.",
+      "ru": "Определяет нижнюю часть содержимого таблицы.",
+      "en": "Groups the footer content in a table."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<table><tfoot><tr><td>Footer</td></tr></tfoot></table>"]
   },
   {
     "name": "th",
-    "description": "Defines a header cell in a table.",
+    "description": {
+      "uz": "Jadval ustunini belgilaydi.",
+      "ru": "Определяет заголовок ячейки в таблице.",
+      "en": "Defines a header cell in a table."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<table><tr><th>Header</th></tr></table>"]
   },
   {
     "name": "thead",
-    "description": "Defines a header for a table or a group of rows in a table.",
+    "description": {
+      "uz": "Jadvalning sarlavhasini belgilaydi.",
+      "ru": "Определяет верхнюю часть содержимого таблицы.",
+      "en": "Groups the header content in a table."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<table><thead><tr><th>Header</th></tr></thead></table>"]
   },
   {
     "name": "time",
-    "description": "Defines a date/time.",
+    "description": {
+      "uz": "Vaqtni belgilaydi.",
+      "ru": "Определяет дату/время.",
+      "en": "Defines a date/time."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<time datetime=\"2008-02-14T20:00Z\">Valentine's Day</time>"]
+    "examples": [
+      "<p>The time is <time datetime=\"2023-01-04\">January 4, 2023</time>.</p>"
+    ]
   },
   {
     "name": "title",
-    "description": "Defines the title of the document.",
-    "type": "meta",
+    "description": {
+      "uz": "Hujjatning sarlavhasini belgilaydi.",
+      "ru": "Определяет заголовок документа.",
+      "en": "Defines the document's title."
+    },
+    "type": "block",
     "selfClosing": false,
-    "examples": ["<title>Document Title</title>"]
+    "examples": ["<head><title>Document Title</title></head>"]
   },
   {
     "name": "tr",
-    "description": "Defines a row in a table.",
+    "description": {
+      "uz": "Jadval qatorini belgilaydi.",
+      "ru": "Определяет строку в таблице.",
+      "en": "Defines a row in a table."
+    },
     "type": "block",
     "selfClosing": false,
-    "examples": ["<table><tr><td>Data</td></tr></table>"]
+    "examples": ["<table><tr><td>Cell</td></tr></table>"]
   },
   {
     "name": "track",
-    "description": "Defines text tracks for <video> and <audio> elements.",
-    "type": "meta",
+    "description": {
+      "uz": "Media fayl uchun kiritishlar bilan belgilaydi.",
+      "ru": "Определяет текстовые дорожки для мультимедийного контента.",
+      "en": "Defines text tracks for <video> and <audio> elements."
+    },
+    "type": "inline",
     "selfClosing": true,
     "examples": [
       "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"><track src=\"subtitles_en.vtt\" kind=\"subtitles\" srclang=\"en\" label=\"English\"></video>"
@@ -811,41 +1192,61 @@
   },
   {
     "name": "u",
-    "description": "Defines text that should be stylistically different from normal text.",
+    "description": {
+      "uz": "Qalin matnni belgilaydi.",
+      "ru": "Определяет подчеркнутый текст.",
+      "en": "Defines underlined text."
+    },
     "type": "inline",
     "selfClosing": false,
     "examples": ["<p>This is <u>underlined</u> text.</p>"]
   },
   {
     "name": "ul",
-    "description": "Defines an unordered list.",
+    "description": {
+      "uz": "Ro'yxatni belgilaydi.",
+      "ru": "Определяет неупорядоченный список.",
+      "en": "Defines an unordered list."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": ["<ul><li>Item 1</li><li>Item 2</li></ul>"]
   },
   {
     "name": "var",
-    "description": "Defines a variable.",
+    "description": {
+      "uz": "O'zgaruvchi matnni belgilaydi.",
+      "ru": "Определяет переменную.",
+      "en": "Defines a variable."
+    },
     "type": "inline",
     "selfClosing": false,
-    "examples": ["<p>The <var>variable</var> value is 5.</p>"]
+    "examples": ["<p>The value of x is <var>x</var>.</p>"]
   },
   {
     "name": "video",
-    "description": "Defines a video.",
+    "description": {
+      "uz": "Media fayl bilan belgilaydi.",
+      "ru": "Определяет видеоресурс.",
+      "en": "Defines a video or movie."
+    },
     "type": "block",
     "selfClosing": false,
     "examples": [
-      "<video width=\"320\" height=\"240\" controls><source src=\"movie.mp4\" type=\"video/mp4\"><source src=\"movie.ogg\" type=\"video/ogg\">Your browser does not support the video tag.</video>"
+      "<video controls><source src=\"movie.mp4\" type=\"video/mp4\"></video>"
     ]
   },
   {
     "name": "wbr",
-    "description": "Defines a possible line-break.",
+    "description": {
+      "uz": "Matn qatilarini qisqartiradi.",
+      "ru": "Определяет возможность переноса слова на новую строку.",
+      "en": "Defines a possible line-break."
+    },
     "type": "inline",
     "selfClosing": true,
     "examples": [
-      "<p>This is a very long word that needs to break. Here comes a possible break: <wbr>antidisestablishmentarianism.</p>"
+      "<p>This is a very long word: <wbr>supercalifragilisticexpialidocious.</p>"
     ]
   }
 ]

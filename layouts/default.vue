@@ -14,6 +14,11 @@
             <NuxtLink to="/js">JS</NuxtLink>
           </li>
         </ul>
+        <select name="" id="" @change="(e) => setLocale(e.target.value)">
+          <option value="uz">uz</option>
+          <option value="ru">ru</option>
+          <option value="en">en</option>
+        </select>
       </nav>
     </header>
     <div class="container mx-auto">
@@ -22,7 +27,9 @@
   </div>
 </template>
 
-<script setup></script>
+<script setup>
+const { setLocale } = useI18n();
+</script>
 
 <style scoped>
 .router-link-exact-active {
